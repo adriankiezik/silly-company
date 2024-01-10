@@ -1,3 +1,6 @@
+## v1.0.3
+- Fix BepInEx version
+
 ## v1.0.2
 - Fix wrong path on ThunderStore version
 

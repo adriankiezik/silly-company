@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>SillyCompany</AssemblyName>
     <Description>Very silly mod</Description>
-    <Version>1.0.0</Version>
+    <Version>1.0.3</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -23,6 +23,9 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>Lethal Company\Lethal Company_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LC_API">
+      <HintPath>Lethal Company\BepInEx\plugins\2018-LC_API\LC_API.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>Lethal Company\Lethal Company_Data\Managed\UnityEngine.dll</HintPath>
