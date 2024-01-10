@@ -10,8 +10,14 @@ namespace SillyCompany
     {
         private const string PLUGIN_OWNER_PREFIX = "silly_capybara-";
 
-        public static readonly string PostersImagePath = Path.Combine(Paths.PluginPath, PLUGIN_OWNER_PREFIX + PluginInfo.PLUGIN_NAME, "posters.png");
-        public static readonly string TipsImagePath = Path.Combine(Paths.PluginPath, PLUGIN_OWNER_PREFIX + PluginInfo.PLUGIN_NAME, "tips.png");
+        private static readonly string PostersImagePath = Path.Combine(
+            Paths.PluginPath,
+            PLUGIN_OWNER_PREFIX + PluginInfo.PLUGIN_NAME + "-" + PluginInfo.PLUGIN_VERSION, "posters.png"
+        );
+        private static readonly string TipsImagePath = Path.Combine(
+            Paths.PluginPath,
+            PLUGIN_OWNER_PREFIX + PluginInfo.PLUGIN_NAME + "-" + PluginInfo.PLUGIN_VERSION, "tips.png"
+        );
 
         private readonly Harmony harmony = new Harmony(PluginInfo.PLUGIN_GUID);
 
